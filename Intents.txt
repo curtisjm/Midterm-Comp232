@@ -4,10 +4,10 @@ or todo lists where we want to specify the use of the add to array list service.
 
     Intent intent = new Intent(MainActivity.this, AddToArrayListService.class);
     bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
-    
 
 Implicit intents are used when the acticity that will be handling the request is unknown. They will be used to perform a general action. For example, if 
 you want to open a link in a browser, you wouldn't know which acticity this would be done through, so you would have to use an implicit intent like this one:
 
     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
     startActivity(intent);
+    
